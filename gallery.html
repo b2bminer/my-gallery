@@ -48,15 +48,19 @@
                 box-shadow: 0 15px 35px rgba(255,255,255,0.1);
                 background: #333;
             }
-            .gallery-img {
-                max-width: 100%;
-                max-height: 600px;
-                width: auto;
-                height: auto;
-                object-fit: contain;
+            .gallery img {
+                width: 1000px;
+                height: 2000px;
+                object-fit: cover;
                 cursor: zoom-in;
                 transition: transform 0.3s ease;
                 border-radius: 8px;
+            }
+            .gallery img:hover {
+            transform: scale(1.05);
+            }
+            .gallery-item:hover .gallery-img {
+                transform: scale(1.05);
             }
             .gallery-item:hover .gallery-img {
                 transform: scale(1.05);
@@ -255,9 +259,9 @@
     <body>
         <h1>📸 Trading Charts Gallery</h1>
         <div class="gallery">
-    <img src="https://dl.dropboxusercontent.com/scl/fi/moiwy2rb6j8z103loo3za/BEM_chart.png?rlkey=0dyjgarb2rvjn8y31i2sntepv&dl=0" alt="Chart Image" onclick="openModal(this.src)">
-<img src="https://dl.dropboxusercontent.com/scl/fi/urbs1p331nnox8703t32g/BH_chart.png?rlkey=0a7b1oyo8ntjhhuqidtc6z5xv&dl=0" alt="Chart Image" onclick="openModal(this.src)">
-<img src="https://dl.dropboxusercontent.com/scl/fi/isekqg3sivyt12cltwth1/RCL_chart.png?rlkey=aqpx2lnv1rj39zw62y3txh3da&dl=0" alt="Chart Image" onclick="openModal(this.src)">
+    <img src="https://dl.dropboxusercontent.com/scl/fi/bnsgifte3qubt3bsw2vn0/BEM_chart.png?rlkey=z3wqzllvzqnb47wx32mh5ksq6&dl=0" alt="Chart Image" onclick="openModal(this.src)">
+<img src="https://dl.dropboxusercontent.com/scl/fi/0x634jvsvlyjr58jcptev/BH_chart.png?rlkey=j0uu3zaj2wnvcmays2tcivou3&dl=0" alt="Chart Image" onclick="openModal(this.src)">
+<img src="https://dl.dropboxusercontent.com/scl/fi/bink7iuog46jjozytht4h/RCL_chart.png?rlkey=bl09n2rlnbvm4cbwznw2p2xvd&dl=0" alt="Chart Image" onclick="openModal(this.src)">
 
         </div>
 
